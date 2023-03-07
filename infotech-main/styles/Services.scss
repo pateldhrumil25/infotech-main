@@ -1,0 +1,103 @@
+@use './colors' as *;
+
+#services {
+    width: 100%;
+    padding: 5vw 0 10vw 0;
+    width: 100%;
+    background: $black;
+    color: $white;
+    h1 {
+        width: 100%;
+        padding-left: 8.281vw;
+        font-size: clamp(10px, 2.031vw, 1.5rem);
+        font-weight: 500;
+        font-family: 'montserrat';
+    }
+    h2 {
+        margin-left: 12.734vw;
+        width: 26.016vw;
+        line-height: 4.063vw;
+        font-size: clamp(14px, 3.281vw, 3.15rem);
+        font-weight: 500;
+    }
+    .cards {
+        margin-left: 12.734vw;
+        margin-right: 11.250vw;
+        width: 74vw;
+        height: 25.469vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .card {
+            height: 25.469vw;
+            .close {
+                display: block;
+                width: 6.250vw;
+                height: 25.469vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background: $dark-gray;
+                padding: 0;
+                margin: 0;
+                padding-top: 1.3vw;
+                cursor: pointer;
+                h2 {
+                    text-align: center;
+                    font-weight: 500;
+                    width: 6.250vw;
+                    font-size: clamp(8px, 1.875vw, 1rem);
+                    margin: 0;
+                }
+                p {
+                    text-align: center;
+                    font-weight: 500;
+                    width: 16vw;
+                    font-size: clamp(6px, 1.406vw, 1.35rem);
+                    margin: 0;
+                    margin-bottom: 10vw;
+                    transform: rotate(-90deg);
+                    color: $light-gray-trans;
+                    padding: 0;
+                }
+            }
+            .open {
+                height: 25.469vw;
+                overflow: hidden;
+                overflow-y: auto;
+                &::-webkit-scrollbar {
+                    visibility: hidden;
+                }
+                width: 40.625vw;
+                background: $white;
+                color: $black;
+                h2 {
+                    margin: 0 auto;
+                    width: 90%;
+                    padding: 0;
+                    line-height: 100%;
+                    padding-top: 2.344vw;
+                    margin-left: 2.578vw;
+                    font-size: clamp(7px, 1.8vw, 1.2rem);
+                    font-weight: 500;
+                    font-family: 'montserrat';
+                    span {
+                        font-weight: 600;
+                        margin-left: 1.250vw;
+                    }
+                }
+                p {
+                    margin-left: 6.719vw;
+                    width: 30.547vw;
+                    width: 30rem;
+                    width: clamp(110px, 30vw, 80%);
+                    font-size: clamp(5px, 1.2vw, 1.1rem);
+                    font-weight: 400;
+                    font-family: 'montserrat';
+                }
+            }
+        }
+    }
+}

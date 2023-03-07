@@ -1,0 +1,173 @@
+@use './colors' as *;
+
+#contact {
+    padding: 4vw 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    h1 {
+        font-size: 3.281vw;
+        font-weight: 500;
+    }
+    form {
+        width: 60vw;
+        padding: 2vw 4vw;
+        border: 0.1vw solid $dark-gray;
+        border-radius: 1vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        .field {
+            position: relative;
+            &:nth-child(2n) {
+                margin-left: 4.453vw;
+            }
+            width: 22.031vw;
+            margin: 1vw 0;
+            label {
+                font-size: 1.250vw;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                span {
+                    font-size: 0.8vw;
+                    color: red;
+                    margin-left: 2vw;
+                    font-weight: 600;
+                    font-family: 'Montserrat';
+                }
+                .mandatory {
+                    margin-left: 0.5vw;
+                    font-size: 1.25vw;
+                    color: red;
+                }
+            }
+            .abs {
+                position: absolute;
+                height: 1.5vw; 
+                top: 2.75vw;
+                left: 0.75vw;
+            }
+            input {
+                margin-top: 0.5vw;
+                width: 22.031vw;
+                height: 3vw;
+                border: 0.01vw solid $light-gray-trans;
+                border-radius: 0.7vw;
+                padding: 0.5vw 1.5vw;
+                font-size: clamp(5px, 1vw, 0.9rem);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            input#budget {
+                width: 13.828vw;
+                height: 3vw;
+                background-repeat: no-repeat;
+                background-size: 2vw;
+                background-position-x: 0.5vw;
+                background-position-y: 0.5vw;
+                text-indent: 2vw;
+            }
+            input#phone {
+                width: 13.828vw;
+                height: 3vw;
+                background-repeat: no-repeat;
+                background-size: 1.2vw;
+                background-position-x: 0.5vw;
+                background-position-y: 0.5vw;
+                text-indent: 1vw;
+            }
+            input#email {
+                height: 3vw;
+                background-repeat: no-repeat;
+                background-size: 2vw;
+                background-position-x: 0.5vw;
+                background-position-y: 0.5vw;
+                text-indent: 2vw;
+            }
+        }
+        .full {
+            width: 100%;
+            .service {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                span {
+                    cursor: pointer;
+                    bordeR: 0.01vw solid $light-gray-trans;
+                    background: $white;
+                    color: $dark-purple;
+                    font-size: 1.094vw;
+                    font-size: clamp(5.5px, 1.094vw, 1.05rem);
+                    font-family: 'Montserrat';
+                    border-radius: 4vw;
+                    margin: 0.5vw 0;
+                    margin-right: 2vw;
+                    padding: 0.5vw 2vw;
+                    font-weight: 500;
+                }
+                .active {
+                    color: $white;
+                    background: $light-purple;
+                }
+            }
+        }
+        .submitbutton {
+            width: 100%;
+            margin-top: 1.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                margin: 0;
+                padding: 0;
+                width: 9.453vw;
+                height: 2.656vw;
+                font-size: 1.25vw;
+                font-size: clamp(7px, 1.2vw, 1.5rem);
+                background: $dark-purple;
+                color: $white;
+                border: none;
+                border-radius: 0.938vw;
+                cursor: pointer;
+            }
+        }
+    }
+    ul.icons {
+        position: absolute;
+        padding: 0;
+        margin-top: 10vw;
+        list-style: none;
+        right: 11vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li {
+            width: 3.750vw;
+            height: 3.750vw;
+            border-radius: 50%;
+            background: $dark-purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1vw 0;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1.406vw;
+                img {
+                    width: 1.406vw;
+                }
+            }
+        }
+    }
+}

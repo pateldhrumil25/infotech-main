@@ -1,0 +1,125 @@
+@use './colors' as *;
+
+#about {
+    width: 100%;
+    background: $white;
+    color: $black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .left {
+        width: 51.875vw;
+        padding: 4vw 0;
+        h1 {
+            width: 100%;
+            padding-left: 8.281vw;
+            font-size: clamp(10px, 2.031vw, 1.5rem);
+            font-weight: 500;
+            font-family: 'montserrat';
+        }
+        h2 {
+            margin-left: 12.734vw;
+            width: 26.016vw;
+            font-size: clamp(14px, 3.281vw, 3.15rem);
+            line-height: 4.063vw;
+            font-weight: 500;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            margin-top: 2.500vw;
+            margin-left: 12.734vw;
+            width: 31.406vw;
+            font-size: clamp(7px, 1.046vw, 1rem);
+            font-weight: 400;
+            line-height: 2.500vw;
+            font-family: 'montserrat';
+        }
+    }
+    .right {
+        width: 48.125vw;
+        padding: 2vw 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        .image {
+            width: 13vw;
+            margin-bottom: 0.4vw;
+            position: relative;
+            img {
+                width: 10.5vw;
+                height: 10.5vw;
+                object-fit: contain;
+                margin: 0;
+                padding: 0;
+            }
+            .details {
+                * {
+                    transition: none !important;
+                }
+                visibility: hidden;
+                width: 10.5vw;
+                height: 10.5vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                background: $light-gray-trans;
+                .left {
+                    width: 70%;
+                    h1 {
+                        width: 100%;
+                        margin: 0;
+                        font-size: clamp(3px, 0.8vw, 0.8rem);
+                        line-height: 110%;
+                        font-weight: 600;
+                        margin: 0.3vw 0;
+                        color: $black;
+                        padding: 0;
+                        text-align: center;
+                        margin-bottom: 0.7vw;
+                    }
+                    h3 {
+                        padding: 0;
+                        width: 100%;
+                        margin: 0;
+                        font-size: clamp(3px, 0.65vw, 0.7rem);
+                        line-height: 110%;
+                        font-weight: 400;
+                        margin: 0.3vw 0;
+                        color: $dark-gray;
+                        font-style: italic;
+                        text-align: center;
+                    }
+                }
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    img {
+                        padding: 0.5vw;
+                        width: 1.8vw;
+                        height: 1.8vw;
+                        background: rgba(0,0,0,0.7);
+                        border-radius: 0.5vw;
+                    }
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                .details {
+                    visibility: visible;
+                }
+            }
+        }
+        .arrow {
+            img {
+                padding: 1vw;
+            }
+        }
+    }
+}
